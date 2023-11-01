@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Projeto Integrador Multidisciplinar Extensionista</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <video autoplay loop muted id="video-background">
+        <source src="belasartes.mp4" type="video/mp4">
+        Seu navegador não suporta vídeos HTML5.
+    </video>
+
+    <h1>Projeto Integrador Multidisciplinar Extensionista</h1>
+
+    <div class="rectangle-container">
+        <div class="rectangle" onclick="redirectTo('https://www.belasartes.br')">Belas Artes</div>
+        <div class="rectangle" onclick="redirectTo('https://www.casasbahia.com.br')">Casas Bahia</div>
+        <div class="rectangle" onclick="redirectTo('https://www.olx.com.br')">OLX</div>
+        <div class="rectangle" onclick="redirectTo('https://amazon.com.br')">Amazon</div>
+        <div class="rectangle" onclick="redirectTo('https://www.magazineluiza.com.br')">Magazine Luiza</div>
+        <div class="rectangle" onclick="redirectTo('https://codepen.io')">Codepen</div>
+        <div class="rectangle" onclick="redirectTo('https://chat.openai.com')">Chat GPT</div>
+        <div class="rectangle" onclick="redirectTo('https://store.steampowered.com')">Steam</div>
+        <div class="rectangle" onclick="redirectTo('https://www.youtube.com')">Youtube</div>
+        <div class="rectangle" onclick="redirectTo('https://www.twitch.tv')">Twitch</div>
+        <div class="rectangle" onclick="redirectTo('https://www.python.org')">Python</div>
+        <div class="rectangle" onclick="redirectTo('https://open.spotify.com/intl-pt?')">Spotify</div>
+    </div>
+
+    <script>
+        function redirectTo(url) {
+            window.location.href = url;
+        }
+    </script>
+</body>
+</html>
+
+

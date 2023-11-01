@@ -1,0 +1,94 @@
+/*/body {
+    background-image: url(function.webp);
+}*/
+.rectangle-container {
+    text-align: center;
+}
+
+.rectangle {
+    width: 1220px;
+    height: 300px;
+    margin: 10px;
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+    line-height: 100px;
+    color: #000000;
+    font-weight: bold;
+    border-radius: 20px;
+}
+
+.rectangle:nth-child(1) { background-color: rgba(229, 255, 0, 0.5); }
+.rectangle:nth-child(2) { background-color: rgba(0, 26, 255, 0.5); }
+.rectangle:nth-child(3) { background-color: rgba(212, 0, 255, 0.5); }
+.rectangle:nth-child(4) { background-color: rgba(0, 255, 213, 0.5); }
+.rectangle:nth-child(5) { background-color: rgba(0, 119, 255, 0.5); }
+.rectangle:nth-child(6) { background-color: rgba(66, 14, 14, 0.5); }
+.rectangle:nth-child(7) { background-color: rgba(32, 105, 30, 0.5); }
+.rectangle:nth-child(8) { background-color: rgba(0, 255, 179, 0.5); }
+.rectangle:nth-child(9) { background-color: rgba(255, 0, 0, 0.5); }
+.rectangle:nth-child(10) { background-color: rgba(43, 0, 255, 0.5); }
+.rectangle:nth-child(11) { background-color: rgba(255, 251, 0, 0.5); }
+.rectangle:nth-child(12) { background-color: rgba(0, 255, 13, 0.5); }
+
+h1 {
+    font-size: 15px;
+    color: #000000;
+    margin: 0;
+    background-image: url('belas.webp');
+    background-size: contain;
+    background-position: center;
+    background-repeat: repeat; /* Adicione esta linha para repetir a imagem de fundo */
+    height: 200px;
+    padding: 20px;
+    box-shadow: 0 0 20px rgb(0, 0, 0);
+    position: relative; /* Adiciona uma posição relativa ao elemento h1 */
+}
+
+h1::before {
+    content: ''; /* Cria um pseudo-elemento para o retângulo branco transparente */
+    position: absolute; /* Define uma posição absoluta para o pseudo-elemento */
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.5);/* Cor do retângulo branco transparente */
+    z-index: -1; /* Coloca o retângulo atrás do conteúdo */
+}
+/* Altere as regras CSS para os retângulos */
+
+.rectangle-container {
+    text-align: center;
+    max-width: 1400px; /* Define a largura máxima para os retângulos */
+    margin: 0 auto; /* Centraliza o container na tela */
+}
+
+.rectangle {
+    width: 100%; /* Preenche a largura disponível do container */
+    height: 200px;
+    margin: 10px 0; /* Adiciona margem na parte superior e inferior dos retângulos */
+    cursor: pointer;
+    text-align: center;
+    line-height: 100px;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 20px;
+    background-color: #3498db;
+    transition: transform 0.2s; /* Adiciona uma transição suave no hover */
+}
+video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1; /* Para garantir que fique no fundo */
+}
+.rectangle-container .rectangle {
+    color: black; /* Define a cor do texto para preto para todos os elementos .rectangle */
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 200%;
+}
+
+  
+  
